@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job-application-form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p
+    +WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="testbox">
+        <form action="">
+
+            <div class="banner">
+                <h1>Job application form</h1>
+            </div>
+            <div class="item first-btn-cont">
+                <button class="first-btn" inputtype="button" onclick="window.open('https://www.linkedin.com/','_blank');">
+                    Apply with Linkedin</button>
+            </div>
+            <h2>Applicant Details</h2>
+            <div class="item">
+                <p>Name</p>
+                <div class="name-item">
+                    <label for="fname"></label>
+                    <input type="text" name="name" id="fname" placeholder="Enter your first name" required>
+                    <label for="lname"></label>
+                    <input type="text" name="name" id="lname" placeholder="Enter your last name" required>
+                </div>
+            </div>
+
+            <div>
+                <div class="email item">
+
+                    <label for="email">Email</label>
+                    <input type="text" name="name" id="email" placeholder="Enter your email name" required>
+                </div>
+
+            </div>
+            <div class="date item">
+
+                <p>Birthday</p>
+                <input type="date" name="bdate" required/>
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="gender item">
+                <p>Gender</p>
+                <div class="gender-item">
+                    <label for="male"><input type="radio" name="name" id="male" value="male">Male</label>
+
+                    <label for="female"><input type="radio" name="name" id="female" value="female">Female</label>
+
+                </div>
+            </div>
+
+            <div class="item phone">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="name" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="000-00-000">
+            </div>
+            <div class="label item">
+                <label for="locations">Preferred job locations</label><br>
+                <select>
+                        <option value="">City</option>
+                        <option value="1">New York</option>
+                        <option value="2">Stockholm</option>
+                        <option value="3">Malmo</option>
+                        <option value="4">Osslo</option>
+                        <option value="5">Skelleftea</option></select>
+            </div>
+            <div class="item cv">
+                <label for="myfile">* Upload your CV</label>
+                <input type="file" id="myfile" name="file">
+            </div>
+            <div class="item add-doc">
+                <label for="myfile1">Additional documents</label>
+                <input type="file" id="myfile1" name="file">
+            </div>
+
+            <div class="item">
+                <p>* Cover Letter</p>
+                <textarea rows="3"></textarea>
+            </div>
+            <div class="btn-block">
+                <button type="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
